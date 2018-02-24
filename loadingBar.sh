@@ -1,10 +1,4 @@
 #!/bin/bash
-#echo -ne '#####                     (33%)\r'
-#sleep 1
-#echo -ne '#############             (66%)\r'
-#sleep 1
-#echo -ne '#######################   (100%)\r'
-#echo -ne '\n'
 count=$((0))
 anim=$((0))
 while [[ $count -lt $((100)) ]]; do
@@ -16,19 +10,13 @@ while [[ $count -lt $((100)) ]]; do
     fi
 
     if [[ $anim -eq $((1)) ]]; then
-        step="-"
+        step="|"
     elif [[ $anim -eq $((3)) ]]; then
-        step="\\"
+        step="/"
     elif [[ $anim -eq $((9)) ]]; then
-        step="|"
-    elif [[ $anim -eq $((12)) ]]; then
-        step="/"
-    elif [[ $anim -eq $((15)) ]]; then
         step="-"
-    elif [[ $anim -eq $((18)) ]]; then
-        step="|"
-    elif [[ $anim -eq $((21)) ]]; then
-        step="/"
+    elif [[ $anim -eq $((12)) ]]; then
+        step="\\"
         anim=$((0))
     fi
 
