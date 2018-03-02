@@ -1,2 +1,2 @@
 # bash_doodles
-Just stuff i'been fooling around
+Just stuff I've been fooling around
